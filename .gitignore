@@ -1,0 +1,24 @@
+# 临时文件
+*.tmp
+*.temp
+
+# 编辑器文件
+.vscode/
+.idea/
+
+# 缓存
+*.cache
+
+# OS 生成的文件
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+
+# 依赖目录（如果有）
+node_modules/
+
+# 构建输出
+dist/
+build/
