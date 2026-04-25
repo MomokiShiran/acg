@@ -444,11 +444,11 @@
                 url_f = matches[1];
         } 
         var newSite = $('<div class="url-card  col-6 col-md-4 col-lg-3 col-xl-2 col-xxl-10a">'+
-            '<div class="url-body mini"><a href="'+site.url+'" target="_blank" class="card new-site mb-3 site-'+site.id+'" data-id="'+site.id+'" data-url="'+site.url+'" data-toggle="tooltip" data-placement="bottom" title="'+site.name+'" rel="external nofollow">'+
+            '<div class="url-body mini"><a href="'+site.url+'" target="_blank" class="card new-site mb-3 site-'+site.id+'" data-id="'+site.id+'" data-url="'+site.url+'" data-bs-toggle="tooltip" data-placement="bottom" title="'+site.name+'" rel="external nofollow">'+
                 '<div class="card-body" style="padding:0.4rem 0.5rem;">'+
                 '<div class="url-content d-flex align-items-center">'+
-                    '<div class="url-img rounded-circle mr-2 d-flex align-items-center justify-content-center">'+
-                        '<img src="' + theme.icourl + url_f + theme.icopng + '">'+
+                    '<div class="url-img rounded-circle me-2 d-flex align-items-center justify-content-center">'+
+                        '<img src="' + theme.icourl + url_f + theme.icopng + '" onerror="javascript:this.src=\'assets/images/favicon.png\'">'+
                     '</div>'+
                     '<div class="url-info flex-fill">'+
                         '<div class="text-sm overflowClip_1">'+
