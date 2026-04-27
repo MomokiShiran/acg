@@ -4,7 +4,6 @@ const path = require('path');
 const DATA_FILE = path.join(__dirname, '../data/sites.json');
 const OUTPUT_DIR = path.join(__dirname, '../sites');
 const TRASH_DIR = path.join(__dirname, '../sitetrash');
-const TEMPLATE_DIR = path.join(__dirname, '../templates');
 
 const data = JSON.parse(fs.readFileSync(DATA_FILE, 'utf8'));
 
@@ -76,16 +75,16 @@ function generateSiteDetailPage(site) {
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>${site.name} | MyACG</title>
+<title>${site.name} | MyACGN</title>
 <meta name="theme-color" content="#f9f9f9">
-<meta name="keywords" content="${site.name},MyACG">
+<meta name="keywords" content="${site.name},MyACGN">
 <meta name="description" content="${site.description}">
 <meta property="og:type" content="article">
 <meta property="og:url" content="sites/${site.id}.html">
-<meta property="og:title" content="${site.name} | MyACG">
+<meta property="og:title" content="${site.name} | MyACGN">
 <meta property="og:description" content="${site.detail || site.description}">
 <meta property="og:image" content="https://favicon.im/${new URL(site.url).hostname}">
-<meta property="og:site_name" content="MyACG">
+<meta property="og:site_name" content="MyACGN">
 <link rel="shortcut icon" href="../assets/images/favicon.png">
 <link rel="apple-touch-icon" href="../assets/images/favicon.png">
 <link rel="stylesheet" href="../assets/css/iconfont.css?ver=2.0406" type="text/css" media="all">
@@ -102,12 +101,12 @@ function generateSiteDetailPage(site) {
             <div class="sidebar-logo border-bottom border-color">
                 <div class="logo overflow-hidden">
                     <a href="/" class="logo-expanded">
-                        <img src="../assets/images/20210727002253-59085.jpeg" height="40" class="logo-light" alt="MyACG">
-                        <img src="../assets/images/20210727002253-59085.jpeg" height="40" class="logo-dark d-none" alt="MyACG">
+                        <img src="../assets/images/20210727002253-59085.jpeg" height="40" class="logo-light" alt="MyACGN">
+                        <img src="../assets/images/20210727002253-59085.jpeg" height="40" class="logo-dark d-none" alt="MyACGN">
                     </a>
                     <a href="/" class="logo-collapsed">
-                        <img src="../assets/images/favicon.png" height="40" class="logo-light" alt="MyACG">
-                        <img src="../assets/images/favicon.png" height="40" class="logo-dark d-none" alt="MyACG">
+                        <img src="../assets/images/favicon.png" height="40" class="logo-light" alt="MyACGN">
+                        <img src="../assets/images/favicon.png" height="40" class="logo-dark d-none" alt="MyACGN">
                     </a>
                 </div>
             </div>
@@ -157,8 +156,8 @@ function generateSiteDetailPage(site) {
             <div class="navbar navbar-expand-md">
                 <div class="container-fluid p-0">
                     <a href="/" class="navbar-brand d-md-none">
-                        <img src="../assets/images/favicon.png" class="logo-light" alt="MyACG">
-                        <img src="../assets/images/favicon.png" class="logo-dark d-none" alt="MyACG">
+                        <img src="../assets/images/favicon.png" class="logo-light" alt="MyACGN">
+                        <img src="../assets/images/favicon.png" class="logo-dark d-none" alt="MyACGN">
                     </a>
                     <div class="collapse navbar-collapse order-2 order-md-1">
                         <div class="header-mini-btn">
@@ -243,7 +242,7 @@ function generateSiteDetailPage(site) {
             </div>
             <div class="footer-inner" style="text-align: center;">
                 <div class="footer-text">
-                    © 2023 MyACG &nbsp;&nbsp;Design by <a href="/" target="_blank" rel="noopener noreferrer"><strong>Z</strong></a>&nbsp;&nbsp;|&nbsp;<a href="donate/" target="_blank" rel="noopener noreferrer"><strong>Donate</strong></a>
+                    © 2026 MyACGN &nbsp;&nbsp;Powered by <a href="https://github.com/MomokiShiran/ACGN" target="_blank" rel="noopener noreferrer"><strong>ACGN</strong></a>
                 </div>
                 <div class="footer-text mt-2" style="font-size: 11px; color: #888; max-width: 800px; margin: 0 auto; line-height: 1.8;">
                     <strong>免责声明：</strong>本站仅提供网站链接导航服务，不存储、不制作、不传播任何内容。所有链接均指向第三方网站本站对第三方网站内容不承担任何责任。如有侵权内容，请联系站长删除。本站仅供学习交流使用，请勿用于非法用途。
@@ -304,10 +303,10 @@ function generateTrashPage() {
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>失效归档 | MyACG</title>
+<title>失效归档 | MyACGN</title>
 <meta name="theme-color" content="#f9f9f9">
-<meta name="keywords" content="失效归档,MyACG">
-<meta name="description" content="MyACG盒子，ACG二次元导航盒子，收录ACG二次元相关的网站盒子，打造一个ACG二次元专属的网站。">
+<meta name="keywords" content="失效归档,MyACGN">
+<meta name="description" content="MyACGN盒子，ACG二次元导航盒子，收录ACG二次元相关的网站盒子，打造一个ACG二次元专属的网站。">
 <link rel="shortcut icon" href="../assets/images/favicon.png">
 <link rel="apple-touch-icon" href="../assets/images/favicon.png">
 <link rel="stylesheet" href="../assets/css/iconfont.css?ver=2.0406" type="text/css" media="all">
@@ -324,12 +323,12 @@ function generateTrashPage() {
             <div class="sidebar-logo border-bottom border-color">
                 <div class="logo overflow-hidden">
                     <a href="/" class="logo-expanded">
-                        <img src="../assets/images/20210727002253-59085.jpeg" height="40" class="logo-light" alt="MyACG">
-                        <img src="../assets/images/20210727002253-59085.jpeg" height="40" class="logo-dark d-none" alt="MyACG">
+                        <img src="../assets/images/20210727002253-59085.jpeg" height="40" class="logo-light" alt="MyACGN">
+                        <img src="../assets/images/20210727002253-59085.jpeg" height="40" class="logo-dark d-none" alt="MyACGN">
                     </a>
                     <a href="/" class="logo-collapsed">
-                        <img src="../assets/images/favicon.png" height="40" class="logo-light" alt="MyACG">
-                        <img src="../assets/images/favicon.png" height="40" class="logo-dark d-none" alt="MyACG">
+                        <img src="../assets/images/favicon.png" height="40" class="logo-light" alt="MyACGN">
+                        <img src="../assets/images/favicon.png" height="40" class="logo-dark d-none" alt="MyACGN">
                     </a>
                 </div>
             </div>
@@ -379,8 +378,8 @@ function generateTrashPage() {
             <div class="navbar navbar-expand-md">
                 <div class="container-fluid p-0">
                     <a href="/" class="navbar-brand d-md-none">
-                        <img src="../assets/images/favicon.png" class="logo-light" alt="MyACG">
-                        <img src="../assets/images/favicon.png" class="logo-dark d-none" alt="MyACG">
+                        <img src="../assets/images/favicon.png" class="logo-light" alt="MyACGN">
+                        <img src="../assets/images/favicon.png" class="logo-dark d-none" alt="MyACGN">
                     </a>
                     <div class="collapse navbar-collapse order-2 order-md-1">
                         <div class="header-mini-btn">
@@ -426,7 +425,7 @@ ${siteCards}
             </div>
             <div class="footer-inner" style="text-align: center;">
                 <div class="footer-text">
-                    © 2023 MyACG &nbsp;&nbsp;Design by <a href="/" target="_blank" rel="noopener noreferrer"><strong>Z</strong></a>&nbsp;&nbsp;|&nbsp;<a href="donate/" target="_blank" rel="noopener noreferrer"><strong>Donate</strong></a>
+                    © 2026 MyACGN &nbsp;&nbsp;Powered by <a href="https://github.com/MomokiShiran/ACGN" target="_blank" rel="noopener noreferrer"><strong>ACGN</strong></a>
                 </div>
                 <div class="footer-text mt-2" style="font-size: 11px; color: #888; max-width: 800px; margin: 0 auto; line-height: 1.8;">
                     <strong>免责声明：</strong>本站仅提供网站链接导航服务，不存储、不制作、不传播任何内容。所有链接均指向第三方网站本站对第三方网站内容不承担任何责任。如有侵权内容，请联系站长删除。本站仅供学习交流使用，请勿用于非法用途。
