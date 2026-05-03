@@ -93,14 +93,6 @@
   ],
   "sites": [
     {
-      "id": 442,
-      "name": "Wallhaven",
-      "url": "https://wallhaven.cc",
-      "description": "壁纸站，需登录查看全部内容，图片较多",
-      "category": "term-2",
-      "isNew": true
-    },
-    {
       "id": 440,
       "name": "Kemono",
       "url": "https://kemono.party",
@@ -2153,6 +2145,13 @@
       "description": "日更新番剧免費中文成人H漫",
       "url": "#",
       "id": 1021
+    },
+    {
+      "id": 442,
+      "name": "Wallhaven",
+      "url": "https://wallhaven.cc",
+      "description": "壁纸站，需登录查看全部内容，图片较多",
+      "category": "term-2"
     }
   ]
 }
